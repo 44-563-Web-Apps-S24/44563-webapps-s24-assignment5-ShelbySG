@@ -14,6 +14,24 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
+<nav class="navbar navbar-expand-md bg-light">
+  <div class="container-fluid">
+  <a class="navbar-brand" href="drinks.html">A Few Drinks</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarDrinks">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="basic.html">Basic</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="advanced.html">Advanced</a>
+        </li>
+    </ul>
+  </div>
+  </div>
+</nav>
 <div class="flex-container">
 
 <div class="row"></div>
@@ -122,10 +140,23 @@
 </table>
 
 <hr>
+
+<div class="dropdown">
+
 <p>Letter Buttons</p>
 <div class="btn-toolbar" role="toolbar" aria-label="Letter Buttons">
 <div class="btn-group" role="group" aria-label="Letter Buttons">
-<button type="button" class="btn btn-success">G</button>
+
+<button type="button" class="btn btn-success dropdown-toggle" data-toggle:"dropdown">G</button>
+<div class="dropdown-menu">
+
+  <div class="dropdown-item">Basic</div>
+  <div class="dropdown-item">Advanced</div>
+  <a class="dropdown-item" href="basic.html">Basic Link</a>
+  <a class="dropdown-item" href="advanced.html">Advanced Link</a>
+  </div>
+
+  
 <button type="button" class="btn btn-success">O</button>
 <button type="button" class="btn btn-success">D</button>
 </div>
@@ -138,6 +169,15 @@
 <div class="btn-group" role="group" aria-label="Letter Buttons">
   <button type="button" class="btn btn-danger">N</button>
 </div>
+</div>
+<p>
+
+
+
+
+
+</p>
+
 </div>
 </body>
 </html>
